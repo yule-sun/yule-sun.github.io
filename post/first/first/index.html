@@ -489,16 +489,16 @@
           <h2 id="我的第一篇文章記錄hugo創建github博客的過程">我的第一篇文章，記錄hugo創建github博客的過程</h2>
 <h4 id="1需要先在githubcom網站上註冊賬號">1.需要先在github.com網站上註冊賬號</h4>
 <h4 id="2在個人賬號下面創建一個新的倉庫注意倉庫名稱要選擇跟個人賬號名稱一致">2.在個人賬號下面創建一個新的倉庫，注意倉庫名稱要選擇跟個人賬號名稱一致</h4>
-<p><img src="./images/image.png">
-<img src="images/image-1.png"></p>
+<p><img src="/images/image.png">
+<img src="/images/image-1.png"></p>
 <h4 id="3在電腦上安裝需要的環境hugo和git">3.在電腦上安裝需要的環境hugo和git</h4>
 <p>安裝hugo</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>winget install Hugo.Hugo.Extended --source winget
 </span></span></code></pre></div><p>安裝git</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>winget install --id Git.Git -e --source winget
 </span></span></code></pre></div><h4 id="4創建一個本地目錄專門存放文章">4.創建一個本地目錄專門存放文章</h4>
-<p><img alt="alt text" src="./images/image-2.png">
-<img alt="alt text" src="./images/image-3.png"></p>
+<p><img alt="alt text" src="/images/image-2.png">
+<img alt="alt text" src="/images/image-3.png"></p>
 <h4 id="5使用hugo創建一個新的網站">5.使用hugo創建一個新的網站</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>hugo new site blogs
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> .\blogs\
@@ -508,13 +508,13 @@
 </span></span><span style="display:flex;"><span>cp themes/jane/exampleSite/config.toml ./
 </span></span></code></pre></div><h4 id="7本地測試文章是否能正常訪問">7.本地測試文章是否能正常訪問</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>hugo server
-</span></span></code></pre></div><p><img alt="alt text" src="./images/image-4.png">
+</span></span></code></pre></div><p><img alt="alt text" src="/images/image-4.png">
 注：如果有這個報錯提示，是因為步驟6複製過來的config.toml缺少配置信息，打開config.toml添加下面的內容</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>[mediaTypes]
 </span></span><span style="display:flex;"><span>  [mediaTypes.&#34;text/markdown&#34;]
 </span></span><span style="display:flex;"><span>    suffixes = [&#34;md&#34;, &#34;markdown&#34;, &#34;mmark&#34;]
 </span></span></code></pre></div><p>添加之後再啟動測試命令 <code>hugo server</code>，看到下面的結果，就表示成功了
-<img alt="alt text" src="./images//image-5.png"></p>
+<img alt="alt text" src="/images//image-5.png"></p>
 <h4 id="8將網站發佈到自己的倉庫中此處在hugo目錄下跟blogs目錄同級">8.將網站發佈到自己的倉庫中，此處在hugo目錄下跟blogs目錄同級</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ..
 </span></span><span style="display:flex;"><span>git clone https://github.com/yule-sun/yule-sun.github.io.git

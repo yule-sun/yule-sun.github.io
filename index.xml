@@ -300,16 +300,16 @@ $$&lt;/p&gt;
         <description>&lt;h2 id=&#34;我的第一篇文章記錄hugo創建github博客的過程&#34;&gt;我的第一篇文章，記錄hugo創建github博客的過程&lt;/h2&gt;
 &lt;h4 id=&#34;1需要先在githubcom網站上註冊賬號&#34;&gt;1.需要先在github.com網站上註冊賬號&lt;/h4&gt;
 &lt;h4 id=&#34;2在個人賬號下面創建一個新的倉庫注意倉庫名稱要選擇跟個人賬號名稱一致&#34;&gt;2.在個人賬號下面創建一個新的倉庫，注意倉庫名稱要選擇跟個人賬號名稱一致&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;./images/image.png&#34;&gt;
-&lt;img src=&#34;images/image-1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/image.png&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/images/image-1.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;3在電腦上安裝需要的環境hugo和git&#34;&gt;3.在電腦上安裝需要的環境hugo和git&lt;/h4&gt;
 &lt;p&gt;安裝hugo&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;winget install Hugo.Hugo.Extended --source winget
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安裝git&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;winget install --id Git.Git -e --source winget
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;4創建一個本地目錄專門存放文章&#34;&gt;4.創建一個本地目錄專門存放文章&lt;/h4&gt;
-&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;./images/image-2.png&#34;&gt;
-&lt;img alt=&#34;alt text&#34; src=&#34;./images/image-3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/image-2.png&#34;&gt;
+&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/image-3.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;5使用hugo創建一個新的網站&#34;&gt;5.使用hugo創建一個新的網站&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site blogs
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;cd&lt;/span&gt; .\blogs\
@@ -319,13 +319,13 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp themes/jane/exampleSite/config.toml ./
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;7本地測試文章是否能正常訪問&#34;&gt;7.本地測試文章是否能正常訪問&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;./images/image-4.png&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/image-4.png&#34;&gt;
 注：如果有這個報錯提示，是因為步驟6複製過來的config.toml缺少配置信息，打開config.toml添加下面的內容&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[mediaTypes]
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [mediaTypes.&amp;#34;text/markdown&amp;#34;]
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    suffixes = [&amp;#34;md&amp;#34;, &amp;#34;markdown&amp;#34;, &amp;#34;mmark&amp;#34;]
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;添加之後再啟動測試命令 &lt;code&gt;hugo server&lt;/code&gt;，看到下面的結果，就表示成功了
-&lt;img alt=&#34;alt text&#34; src=&#34;./images//image-5.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images//image-5.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;8將網站發佈到自己的倉庫中此處在hugo目錄下跟blogs目錄同級&#34;&gt;8.將網站發佈到自己的倉庫中，此處在hugo目錄下跟blogs目錄同級&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd ..
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/yule-sun/yule-sun.github.io.git
