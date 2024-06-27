@@ -81,7 +81,7 @@
   <meta itemprop="description" content="我的第一篇文章，記錄hugo創建github博客的過程 1.需要先在github.com網站上註冊賬號 2.在個人賬號下面創建一個新的倉庫，注意">
   <meta itemprop="datePublished" content="2024-06-26T14:01:13+08:00">
   <meta itemprop="dateModified" content="2024-06-26T14:01:13+08:00">
-  <meta itemprop="wordCount" content="605">
+  <meta itemprop="wordCount" content="885">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="我的第一篇文章">
   <meta name="twitter:description" content="我的第一篇文章，記錄hugo創建github博客的過程 1.需要先在github.com網站上註冊賬號 2.在個人賬號下面創建一個新的倉庫，注意">
@@ -489,53 +489,62 @@
           <h2 id="我的第一篇文章記錄hugo創建github博客的過程">我的第一篇文章，記錄hugo創建github博客的過程</h2>
 <h4 id="1需要先在githubcom網站上註冊賬號">1.需要先在github.com網站上註冊賬號</h4>
 <h4 id="2在個人賬號下面創建一個新的倉庫注意倉庫名稱要選擇跟個人賬號名稱一致">2.在個人賬號下面創建一個新的倉庫，注意倉庫名稱要選擇跟個人賬號名稱一致</h4>
-<p><img src="/images/image.png">
-<img src="/images/image-1.png"></p>
+<p><img src="/images/20240626/image.png"></p>
+<p><img src="/images/20240626/image-1.png"></p>
 <h4 id="3在電腦上安裝需要的環境hugo和git">3.在電腦上安裝需要的環境hugo和git</h4>
 <p>安裝hugo</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>winget install Hugo.Hugo.Extended --source winget
-</span></span></code></pre></div><p>安裝git</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>winget install --id Git.Git -e --source winget
-</span></span></code></pre></div><h4 id="4創建一個本地目錄專門存放文章">4.創建一個本地目錄專門存放文章</h4>
-<p><img alt="alt text" src="/images/image-2.png">
-<img alt="alt text" src="/images/image-3.png"></p>
+<pre tabindex="0"><code>winget install Hugo.Hugo.Extended --source winget
+</code></pre><p>安裝git</p>
+<pre tabindex="0"><code>winget install --id Git.Git -e --source winget
+</code></pre><h4 id="4創建一個本地目錄專門存放文章">4.創建一個本地目錄專門存放文章</h4>
+<p><img alt="alt text" src="/images/20240626/image-2.png"></p>
+<p><img alt="alt text" src="/images/20240626/image-3.png"></p>
 <h4 id="5使用hugo創建一個新的網站">5.使用hugo創建一個新的網站</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>hugo new site blogs
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> .\blogs\
-</span></span></code></pre></div><h4 id="6套用hugo的模板httpsthemesgohugoio官網提供了很多模板挑選自己喜歡的">6.套用hugo的模板，https://themes.gohugo.io/官網提供了很多模板，挑選自己喜歡的</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/xianmin/hugo-theme-jane.git --depth<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> themes/jane
-</span></span><span style="display:flex;"><span>cp -r themes/jane/exampleSite/content ./
-</span></span><span style="display:flex;"><span>cp themes/jane/exampleSite/config.toml ./
-</span></span></code></pre></div><h4 id="7本地測試文章是否能正常訪問">7.本地測試文章是否能正常訪問</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>hugo server
-</span></span></code></pre></div><p><img alt="alt text" src="/images/image-4.png">
+<pre tabindex="0"><code>hugo new site blogs
+cd .\blogs\
+</code></pre><h4 id="6套用hugo的模板httpsthemesgohugoio官網提供了很多模板挑選自己喜歡的">6.套用hugo的模板，https://themes.gohugo.io/官網提供了很多模板，挑選自己喜歡的</h4>
+<pre tabindex="0"><code>git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
+cp -r themes/jane/exampleSite/content ./
+cp themes/jane/exampleSite/config.toml ./
+</code></pre><h4 id="7本地測試文章是否能正常訪問">7.本地測試文章是否能正常訪問</h4>
+<pre tabindex="0"><code>hugo server
+</code></pre><p><img alt="alt text" src="/images/20240626/image-4.png">
 注：如果有這個報錯提示，是因為步驟6複製過來的config.toml缺少配置信息，打開config.toml添加下面的內容</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>[mediaTypes]
-</span></span><span style="display:flex;"><span>  [mediaTypes.&#34;text/markdown&#34;]
-</span></span><span style="display:flex;"><span>    suffixes = [&#34;md&#34;, &#34;markdown&#34;, &#34;mmark&#34;]
-</span></span></code></pre></div><p>添加之後再啟動測試命令 <code>hugo server</code>，看到下面的結果，就表示成功了
-<img alt="alt text" src="/images//image-5.png"></p>
+<pre tabindex="0"><code>[mediaTypes]
+  [mediaTypes.&#34;text/markdown&#34;]
+    suffixes = [&#34;md&#34;, &#34;markdown&#34;, &#34;mmark&#34;]
+</code></pre><p>添加之後再啟動測試命令 <code>hugo server</code>，看到下面的結果，就表示成功了
+<img alt="alt text" src="/images/20240626/image-5.png"></p>
 <h4 id="8將網站發佈到自己的倉庫中此處在hugo目錄下跟blogs目錄同級">8.將網站發佈到自己的倉庫中，此處在hugo目錄下跟blogs目錄同級</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ..
-</span></span><span style="display:flex;"><span>git clone https://github.com/yule-sun/yule-sun.github.io.git
-</span></span></code></pre></div><h4 id="9將網站託管到github上">9.將網站託管到github上</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp -rf blogs/public/* yule-sun.github.io/
-</span></span><span style="display:flex;"><span>cd yule-sun.github.io/
-</span></span><span style="display:flex;"><span>git add .
-</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;init the website&#34;</span>
-</span></span><span style="display:flex;"><span>git push
-</span></span></code></pre></div><h4 id="10託管之後打開httpyule-sungithubio一直顯示404中間過了差不多2個小時才能看到網頁但是是jane的模板">10.託管之後，打開http://yule-sun.github.io,一直顯示404，中間過了差不多2個小時，才能看到網頁，但是是Jane的模板</h4>
+<pre tabindex="0"><code>cd ..
+git clone https://github.com/yule-sun/yule-sun.github.io.git
+</code></pre><h4 id="9將網站託管到github上">9.將網站託管到github上</h4>
+<pre tabindex="0"><code>cp -rf blogs/public/* yule-sun.github.io/
+cd yule-sun.github.io/
+git add .
+git commit -m &#34;init the website&#34;
+git push
+</code></pre><h4 id="10託管之後打開httpyule-sungithubio一直顯示404中間過了差不多2個小時才能看到網頁但是是jane的模板">10.託管之後，打開http://yule-sun.github.io,一直顯示404，中間過了差不多2個小時，才能看到網頁，但是是Jane的模板</h4>
 <h3 id="第二部分添加一個新的靜態網頁">第二部分，添加一個新的靜態網頁</h3>
 <h4 id="1新建一個md文件">1.新建一個md文件</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new post<span style="color:#ae81ff">\f</span>irst<span style="color:#ae81ff">\f</span>irst.md
-</span></span></code></pre></div><h4 id="2編輯blogscontentpost下新出現的firstmd文件本文的內容">2.編輯blogs\content\post\下新出現的first.md文件(本文的內容)</h4>
+<pre tabindex="0"><code>hugo new post\first\first.md
+</code></pre><h4 id="2編輯blogscontentpost下新出現的firstmd文件本文的內容">2.編輯blogs\content\post\下新出現的first.md文件(本文的內容)</h4>
 <h4 id="3重新將內容發佈到github上">3.重新將內容發佈到github上</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp -rf blogs/public/* yule-sun.github.io/
-</span></span><span style="display:flex;"><span>cd yule-sun.github.io/
-</span></span><span style="display:flex;"><span>git add .
-</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Create a new website&#34;</span>
-</span></span><span style="display:flex;"><span>git push
-</span></span></code></pre></div>
+<pre tabindex="0"><code>cp -rf blogs/public/* yule-sun.github.io/
+cd yule-sun.github.io/
+git add .
+git commit -m &#34;Create a new website&#34;
+git push
+</code></pre><h3 id="第三部分圖片引用位置">第三部分，圖片引用位置</h3>
+<h4 id="1方法一把圖片上傳到雲盤直接在博客中引用不再贅述">1.方法一，把圖片上傳到雲盤，直接在博客中引用，不再贅述</h4>
+<h4 id="2方法二引用本地圖片">2.方法二，引用本地圖片</h4>
+<p>2.1 hugo生成網站之後，會放在public下面，所以圖片的絕對路徑就是從Public算起,而static目錄下的內容會被映射到public下，所以注意下面兩個目錄</p>
+<p><img alt="alt text" src="/images/20240626/image-8.png"></p>
+<p>2.2 在static目錄下創建一個目錄，我這裡是images\20240626，使用<code>hugo server</code>啟動預覽模式，可以看到此目錄被映射到了public下</p>
+<p><img alt="alt text" src="/images/20240626/image-9.png"></p>
+<p><img alt="alt text" src="/images/20240626/image-10.png"></p>
+<p>2.3 在md文件中直接使用絕對路徑進行引用，如<code>![alt text](/images/20240626/image.png)</code>，在預覽模式中即可看到圖片</p>
+
         </div>
 
         
@@ -641,6 +650,7 @@
       <ul>
         <li></li>
         <li><a href="#第二部分添加一個新的靜態網頁">第二部分，添加一個新的靜態網頁</a></li>
+        <li><a href="#第三部分圖片引用位置">第三部分，圖片引用位置</a></li>
       </ul>
     </li>
   </ul>

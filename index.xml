@@ -300,53 +300,62 @@ $$&lt;/p&gt;
         <description>&lt;h2 id=&#34;我的第一篇文章記錄hugo創建github博客的過程&#34;&gt;我的第一篇文章，記錄hugo創建github博客的過程&lt;/h2&gt;
 &lt;h4 id=&#34;1需要先在githubcom網站上註冊賬號&#34;&gt;1.需要先在github.com網站上註冊賬號&lt;/h4&gt;
 &lt;h4 id=&#34;2在個人賬號下面創建一個新的倉庫注意倉庫名稱要選擇跟個人賬號名稱一致&#34;&gt;2.在個人賬號下面創建一個新的倉庫，注意倉庫名稱要選擇跟個人賬號名稱一致&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/image.png&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/images/image-1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/20240626/image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/20240626/image-1.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;3在電腦上安裝需要的環境hugo和git&#34;&gt;3.在電腦上安裝需要的環境hugo和git&lt;/h4&gt;
 &lt;p&gt;安裝hugo&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;winget install Hugo.Hugo.Extended --source winget
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安裝git&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;winget install --id Git.Git -e --source winget
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;4創建一個本地目錄專門存放文章&#34;&gt;4.創建一個本地目錄專門存放文章&lt;/h4&gt;
-&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/image-2.png&#34;&gt;
-&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/image-3.png&#34;&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;winget install Hugo.Hugo.Extended --source winget
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;安裝git&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;winget install --id Git.Git -e --source winget
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;4創建一個本地目錄專門存放文章&#34;&gt;4.創建一個本地目錄專門存放文章&lt;/h4&gt;
+&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/20240626/image-2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/20240626/image-3.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;5使用hugo創建一個新的網站&#34;&gt;5.使用hugo創建一個新的網站&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site blogs
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;cd&lt;/span&gt; .\blogs\
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;6套用hugo的模板httpsthemesgohugoio官網提供了很多模板挑選自己喜歡的&#34;&gt;6.套用hugo的模板，https://themes.gohugo.io/官網提供了很多模板，挑選自己喜歡的&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/xianmin/hugo-theme-jane.git --depth&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; themes/jane
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp -r themes/jane/exampleSite/content ./
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp themes/jane/exampleSite/config.toml ./
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;7本地測試文章是否能正常訪問&#34;&gt;7.本地測試文章是否能正常訪問&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/image-4.png&#34;&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new site blogs
+cd .\blogs\
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;6套用hugo的模板httpsthemesgohugoio官網提供了很多模板挑選自己喜歡的&#34;&gt;6.套用hugo的模板，https://themes.gohugo.io/官網提供了很多模板，挑選自己喜歡的&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
+cp -r themes/jane/exampleSite/content ./
+cp themes/jane/exampleSite/config.toml ./
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;7本地測試文章是否能正常訪問&#34;&gt;7.本地測試文章是否能正常訪問&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo server
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/20240626/image-4.png&#34;&gt;
 注：如果有這個報錯提示，是因為步驟6複製過來的config.toml缺少配置信息，打開config.toml添加下面的內容&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[mediaTypes]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [mediaTypes.&amp;#34;text/markdown&amp;#34;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    suffixes = [&amp;#34;md&amp;#34;, &amp;#34;markdown&amp;#34;, &amp;#34;mmark&amp;#34;]
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;添加之後再啟動測試命令 &lt;code&gt;hugo server&lt;/code&gt;，看到下面的結果，就表示成功了
-&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images//image-5.png&#34;&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[mediaTypes]
+  [mediaTypes.&amp;#34;text/markdown&amp;#34;]
+    suffixes = [&amp;#34;md&amp;#34;, &amp;#34;markdown&amp;#34;, &amp;#34;mmark&amp;#34;]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;添加之後再啟動測試命令 &lt;code&gt;hugo server&lt;/code&gt;，看到下面的結果，就表示成功了
+&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/20240626/image-5.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;8將網站發佈到自己的倉庫中此處在hugo目錄下跟blogs目錄同級&#34;&gt;8.將網站發佈到自己的倉庫中，此處在hugo目錄下跟blogs目錄同級&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd ..
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/yule-sun/yule-sun.github.io.git
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;9將網站託管到github上&#34;&gt;9.將網站託管到github上&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp -rf blogs/public/* yule-sun.github.io/
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd yule-sun.github.io/
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;init the website&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;10託管之後打開httpyule-sungithubio一直顯示404中間過了差不多2個小時才能看到網頁但是是jane的模板&#34;&gt;10.託管之後，打開http://yule-sun.github.io,一直顯示404，中間過了差不多2個小時，才能看到網頁，但是是Jane的模板&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd ..
+git clone https://github.com/yule-sun/yule-sun.github.io.git
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;9將網站託管到github上&#34;&gt;9.將網站託管到github上&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cp -rf blogs/public/* yule-sun.github.io/
+cd yule-sun.github.io/
+git add .
+git commit -m &amp;#34;init the website&amp;#34;
+git push
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;10託管之後打開httpyule-sungithubio一直顯示404中間過了差不多2個小時才能看到網頁但是是jane的模板&#34;&gt;10.託管之後，打開http://yule-sun.github.io,一直顯示404，中間過了差不多2個小時，才能看到網頁，但是是Jane的模板&lt;/h4&gt;
 &lt;h3 id=&#34;第二部分添加一個新的靜態網頁&#34;&gt;第二部分，添加一個新的靜態網頁&lt;/h3&gt;
 &lt;h4 id=&#34;1新建一個md文件&#34;&gt;1.新建一個md文件&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new post&lt;span style=&#34;color:#ae81ff&#34;&gt;\f&lt;/span&gt;irst&lt;span style=&#34;color:#ae81ff&#34;&gt;\f&lt;/span&gt;irst.md
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;2編輯blogscontentpost下新出現的firstmd文件本文的內容&#34;&gt;2.編輯blogs\content\post\下新出現的first.md文件(本文的內容)&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new post\first\first.md
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;2編輯blogscontentpost下新出現的firstmd文件本文的內容&#34;&gt;2.編輯blogs\content\post\下新出現的first.md文件(本文的內容)&lt;/h4&gt;
 &lt;h4 id=&#34;3重新將內容發佈到github上&#34;&gt;3.重新將內容發佈到github上&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp -rf blogs/public/* yule-sun.github.io/
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd yule-sun.github.io/
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Create a new website&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cp -rf blogs/public/* yule-sun.github.io/
+cd yule-sun.github.io/
+git add .
+git commit -m &amp;#34;Create a new website&amp;#34;
+git push
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;第三部分圖片引用位置&#34;&gt;第三部分，圖片引用位置&lt;/h3&gt;
+&lt;h4 id=&#34;1方法一把圖片上傳到雲盤直接在博客中引用不再贅述&#34;&gt;1.方法一，把圖片上傳到雲盤，直接在博客中引用，不再贅述&lt;/h4&gt;
+&lt;h4 id=&#34;2方法二引用本地圖片&#34;&gt;2.方法二，引用本地圖片&lt;/h4&gt;
+&lt;p&gt;2.1 hugo生成網站之後，會放在public下面，所以圖片的絕對路徑就是從Public算起,而static目錄下的內容會被映射到public下，所以注意下面兩個目錄&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/20240626/image-8.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;2.2 在static目錄下創建一個目錄，我這裡是images\20240626，使用&lt;code&gt;hugo server&lt;/code&gt;啟動預覽模式，可以看到此目錄被映射到了public下&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/20240626/image-9.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;http://localhost:1313/images/20240626/image-10.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;2.3 在md文件中直接使用絕對路徑進行引用，如&lt;code&gt;![alt text](/images/20240626/image.png)&lt;/code&gt;，在預覽模式中即可看到圖片&lt;/p&gt;
+</description>
       
     </item>
     
